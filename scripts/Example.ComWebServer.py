@@ -10,8 +10,8 @@ from OpenSSL import crypto
 app = Flask(__name__)
 PORT = 3930
 CSR_PATH = 'FinalExample.csr'
-PRIVATE_KEY_PATH = 'FinalExamplePKey.pem'
-CERTIFICATE_PATH = 'FinalExampleCert.pem'
+PRIVATE_KEY_PATH = 'certificates/FinalExamplePKey.pem'
+CERTIFICATE_PATH = 'certificates/FinalExampleCert.pem'
 DOH_SERVER_URL = 'https://localhost:2999'
 PUBLIC_KEY_TTL_HOURS = 0.0166667  # Time-to-live for the public key in hours
 

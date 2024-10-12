@@ -306,4 +306,4 @@ if __name__ == "__main__":
     # scheduler.start()
     # atexit.register(lambda: scheduler.shutdown())
     print(Fore.GREEN + f"DOH SERVER LISTENING ON PORT {PORT}\n" + "✧" * 50 + Style.RESET_ALL)
-    app.run(host='0.0.0.0', port=PORT, ssl_context=('DOHServerCertificate.pem', 'DOHServerPrivate_key.pem'), threaded=True)
+    app.run(host='0.0.0.0', port=PORT, ssl_context=('certificates/DOHServerCertificate.pem', 'certificates/DOHServerPrivate_key.pem'), threaded=True)
